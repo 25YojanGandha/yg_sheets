@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel = "icon" href = "./ICONS/excel_icon.png" >
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="title-bar">Book1 - Excel</div>
+    
+    <div class="menu-bar">
+        <div class="file">File</div>
+        <div class="home selected">Home</div>
+        <div class="save">Save</div>
+        <div class="clear">Clear</div>
+        <div class="help">Help</div>
+    </div>
+
+    <div class="tool-bar">
+        <div class="material-icons">content_cut</div>
+        <div class="material-icons">content_copy</div>
+        <div class="material-icons">content_paste</div>
+
+        <select name="font_style" id="font_style">
+            <option value="Segoe UI" >Segoe UI</option>
+            <option value="Noto Sans" >Noto Sans</option>
+            <option value="Times New Roman">Times New Roman</option>
+            <option value="Georgia">Georgia</option>
+            <option value="Arial">Arial</option>
+            <option value="Helvetica">Helvetica</option>
+            <option value="Brush Script MT">Brush Script MT</option>
+            <option value="Copperplate">Copperplate</option>
+            <option value="Papyrus">Papyrus</option>
+        </select>
+
+        <select name="font_size" id="font_size">
+            <option value="10">10</option>
+            <option value="12">12</option>
+            <option value="14">14</option>
+            <option value="16">16</option>
+            <option value="18">18</option>
+            <option value="20">20</option>
+            <option value="22">22</option>
+            <option value="24">24</option>
+        </select>
+
+        <div class="material-icons style-bold">format_bold</div>
+        <div class="material-icons style-italic">format_italic</div>
+        <div class="material-icons style-underline">format_underline</div>
+        <div class="material-icons align-left">format_align_left</div>
+        <div class="material-icons align-center">format_align_center</div>
+        <div class="material-icons align-right">format_align_right</div>
+        <div class="material-icons color-bg">format_color_fill</div>
+        <div class="material-icons color-text">format_color_text</div>
+    </div>
+
+    <div class="formula-bar">
+        <div class="selected-cell-display"></div>
+        <div class="material-icons function">functions</div>
+        <input class="formula"></input>
+    </div>
+
+    <div class="grid">
+        <div class="void-cell"></div>
+        <div class="column-container">
+            <!-- <div class="col-name">A</div>
+            <div class="col-name">Z</div> -->
+        </div>
+        <div class="row-container">
+            <!-- <div class="row-name">1</div>
+            <div class="row-name">2</div> -->
+        </div>
+        <div class="input-container">
+            <!-- <div class="row">
+                <div class="cell" id="col+row" contenteditable="true"></div>
+                <div class="cell" id="col+row" contenteditable="true"></div>
+            </div> -->
+        </div>
+    </div>
+
+    <div class="sheet-bar">
+        <div class="left-arrow material-icons">arrow_left</div>
+        <div class="right-arrow material-icons">arrow_right</div>
+        <div class="sheet-tab selected ">Sheet1</div>
+        <div class="add-sheet material-icons" style="color: rgb(4,130,4);">add_circle</div>
+        <div class="sheet-scroll-bar"></div>
+    </div>
+
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+<!-- <script src="./script.js"></script> -->
+<script src="script1.js"></script>
+<script src="./styleScript.js"></script>
+
+</body>
+</html>
